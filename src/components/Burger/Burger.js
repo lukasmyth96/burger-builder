@@ -15,15 +15,16 @@ const burger = (props) => {
             return arr.concat(el)
         }, []);
 
-    if (ingredientsArray.length === 0){
+    if (ingredientsArray.length === 0) {
         ingredientsArray = <p className={classes.EmptyBurgerP}> Start adding ingredients! </p>
     }
 
+
     return (
         <div className={classes.Burger}>
-            <BurgerIngredient type={"bread-top"}/>
+            <BurgerIngredient type={"bread-top"} />
             {ingredientsArray}
-            <BurgerIngredient type={"bread-bottom"}/>
+            <BurgerIngredient type={"bread-bottom"} />
         </div>
     );
 }
